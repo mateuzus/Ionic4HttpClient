@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-title>Cadastrar Estudante</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+    <ion-label position="floating">Nome</ion-label>
+    <ion-input [(ngModel)]="data.name" placeholder="Insira seu nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Idade</ion-label>
+    <ion-input [(ngModel)]="data.age" placeholder="Insira sua idade"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Endereço</ion-label>
+    <ion-input [(ngModel)]="data.address" placeholder="Insira seu endereço"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-button (click)="submitForm()">Cadastrar
+    </ion-button>
+  </ion-item>
+
+</ion-content>
